@@ -5,5 +5,7 @@ interface EmployeeDao {
     void deleteEmployee(int id);
     void listAllEmployees();
     double calculateBonus(Employee employee);
-    void displaySalarySlipByDesignation(String designation);
+    void displaySalarySlipById(int id);
+    void filterByDesignation(String designation);
+
 }

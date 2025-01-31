@@ -23,14 +23,17 @@ public class Main {
 
         while (true) {
 
-            System.out.println("1. Add Employee\n2. Get Employee by ID\n3. Update Employee\n4. Delete Employee\n5. List All Employees\n6.PaySlip by Designation\n 7. Exit");
+            System.out.println("1. Add Employee\n2. Get Employee by ID\n3. Update Employee\n4. Delete Employee\n5. Display All Payslip\n6. PaySlip by Id\n7. Filter by Designation\n8. Exit");
+            System.out.println("--------------------------");
             System.out.print("Enter your choice: ");
 
             int choice;
             try {
                 choice = scanner.nextInt();
             } catch (InputMismatchException e) {
-                System.out.println("Invalid input. Please enter a number.");
+                System.out.println("-------------------------");
+                System.out.println("Invalid input. Enter a number.");
+                System.out.println("-------------------------");
                 scanner.next();
                 continue;
             }
@@ -54,20 +57,37 @@ public class Main {
                         Employee newEmployee = new Employee(id, name, designation, salary, hireDate);
                         employeeDao.addEmployee(newEmployee);
                     } catch (Exception e) {
+                        System.out.println("-------------------------");
                         System.out.println("Enter proper Details");
+                        System.out.println("-------------------------");
+                        scanner.next();
+                        continue;
                     }
                     break;
 
                 case 2:
                     System.out.print("Enter Id to fetch: ");
-                    Employee fetchedEmployee = employeeDao.getEmployeeById(scanner.nextInt());
+                    int id;
+                    try {
+                        id = scanner.nextInt();
+                    } catch (InputMismatchException e) {
+                        System.out.println("-------------------------");
+                        System.out.println("Invalid input. Enter a number.");
+                        System.out.println("-------------------------");
+                        scanner.next();
+                        continue;
+                    }
+                    Employee fetchedEmployee = employeeDao.getEmployeeById(id);
                     if (fetchedEmployee != null) {
                         System.out.println(fetchedEmployee);
                     } else {
                         try {
-                            throw new InvalidInput("Employee not found.");
-                        } catch (InvalidInput e) {
-                            e.getExceptionName();
+                            throw new EmployeeNotFound( "Employee not found.");
+                        } catch (EmployeeNotFound e) {
+                            System.out.println("-------------------------");
+                            System.out.println(e.getExceptionName());
+                            System.out.println("-------------------------");
+
                         }
                     }
                     break;
@@ -75,16 +95,26 @@ public class Main {
                 case 3:
 
                     System.out.print("Enter ID to update: ");
-                    Employee oldEmployee = employeeDao.updateEmployeeById(scanner.nextInt());
+                    int oldId;
+                    try {
+                        oldId = scanner.nextInt();
+                    } catch (InputMismatchException e) {
+                        System.out.println("Invalid input. Enter a number.");
+                        scanner.next();
+                        continue;
+                    }
+                    Employee oldEmployee = employeeDao.updateEmployeeById(oldId);
                     if (oldEmployee == null) {
                         try {
                             throw new InvalidInput("Employee not found.");
                         } catch (InvalidInput e) {
-                            e.getExceptionName();
+                            System.out.println("-------------------------");
+                            System.out.println(e.getExceptionName());
+                            System.out.println("-------------------------");
                         }
                     } else {
                         try {
-                            System.out.println("Enter Updated Id");
+                            System.out.print("Enter Updated Id");
                             oldEmployee.setId(scanner.nextInt());
                             scanner.nextLine();
                             System.out.print("Enter Updated Name: ");
@@ -96,14 +126,27 @@ public class Main {
                             scanner.nextLine();
                             System.out.print("Enter Updated Hire Date -> format (dd-MM-yyyy): ");
                             oldEmployee.setHireDate(scanner.nextLine());
-                            System.out.println("---------------------- /n Updated successfully");
+                            System.out.println("-------------------------");
+                            System.out.println("Updated successfully");
+                            System.out.println("-------------------------");
                         } catch (Exception e) {
+                            System.out.println("-------------------------");
                             System.out.println("Enter proper Details");
+                            System.out.println("-------------------------");
                         }
                     }
+                    break;
                 case 4:
                     System.out.print("Enter ID to delete: ");
-                    int deleteId = scanner.nextInt();
+                    int deleteId;
+                    try {
+                        deleteId = scanner.nextInt();
+                    } catch (InputMismatchException e) {
+                        System.out.println("Invalid input. Enter a number.");
+                        scanner.next();
+                        continue;
+                    }
+
                     employeeDao.deleteEmployee(deleteId);
                     break;
 
@@ -112,16 +155,23 @@ public class Main {
                     break;
 
                 case 6:
-                    System.out.println("Enter Employee Designation");
-                    employeeDao.displaySalarySlipByDesignation(scanner.nextLine());
+                    System.out.println("Enter Employee Id");
+                    employeeDao.displaySalarySlipById(scanner.nextInt());
                     break;
+
                 case 7:
-                    System.out.println("Exiting the system. Goodbye!");
+                    scanner.nextLine();
+                    System.out.println("Enter Employee Designation");
+                    employeeDao.filterByDesignation(scanner.nextLine());
+                    break;
+                case 8:
+                    System.out.println("thank you");
                     scanner.close();
                     return;
 
                 default:
-                    System.out.println("Invalid choice. Please try again.");
+                    System.out.println("--------------------------");
+                    System.out.println("Invalid choice");
             }
         }
     }
