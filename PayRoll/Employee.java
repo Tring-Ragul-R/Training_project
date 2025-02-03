@@ -57,7 +57,7 @@ public class Employee {
 
     @Override
     public String toString() {
-        return "Employee [id=" + id + ", name=" + name + ", designation=" + designation + ", salary=" + salary
+        return "Employee [id=" + id + ", name=" + name.toUpperCase() + ", designation=" + designation.toUpperCase() + ", salary=" + salary
                 + ", hireDate=" + hireDate + "]";
     }
 

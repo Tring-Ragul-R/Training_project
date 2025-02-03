@@ -1,25 +1,19 @@
 
-//import java.util.ArrayList;
 import java.util.HashMap;
-//import java.util.List;
 
-class EmployeeNotFound extends Exception {
-
-    String exceptionName;
-
-    public EmployeeNotFound(String exceptionName) {
-        this.exceptionName = exceptionName;
-    }
-
-    public String getExceptionName() {
-        return exceptionName;
-    }
-
-}
-
-class EmployeeDaoImplement implements EmployeeDao {
+public class EmployeeDaoImplement implements EmployeeDao {
 
     HashMap<Integer, Employee> employees = new HashMap<>();
+
+    public void checkListIsEmpty() {
+        try {
+            if (employees == null) {
+                throw new NullPointerException("List is Empty");
+            }
+        } catch (NullPointerException e) {
+            System.out.println(e.getMessage());
+        }
+    }
 
     @Override
     public void addEmployee(Employee employee) {
@@ -36,134 +30,56 @@ class EmployeeDaoImplement implements EmployeeDao {
 
     @Override
     public Employee getEmployeeById(int id) {
-        try {
-            if (employees == null) {
-                throw new NullPointerException("List is Empty");
-            }
-        } catch (NullPointerException e) {
-            System.out.println("-------------------------");
-            System.out.println(e.getMessage());
-            System.out.println("-------------------------");
-
-        }
-
+        checkListIsEmpty();
         if (employees.containsKey(id)) {
             return employees.get(id);
         } else {
-            return null;
+            try {
+                throw new EmployeeNotFound("Employee not found.");
+            } catch (EmployeeNotFound e) {
+                System.out.println(e.getExceptionName());
+            }
         }
-        // for (Integer emp : employees.keySet()) {
-        //     if (emp == id) {
-        //         return employees.get(emp);
-        //     }
-        // }
-        // return null;
+        return null;
     }
 
     @Override
     public Employee updateEmployeeById(int id) {
-        try {
-            if (employees == null) {
-                throw new NullPointerException("List is Empty");
-            }
-        } catch (NullPointerException e) {
-            System.out.println(e.getMessage());
-        }
-
+        checkListIsEmpty();
         if (employees.containsKey(id)) {
             return employees.get(id);
         } else {
-            return null;
+            try {
+                throw new EmployeeNotFound("Employee not found.");
+            } catch (EmployeeNotFound e) {
+                System.out.println(e.getExceptionName());
+            }
         }
-        // for (Integer emp : employees.keySet()) {
-        //     if (emp == id) {
-        //         return employees.get(emp);
-        //     }
-        // }
-        // return null;
+        return null;
     }
 
     @Override
     public void deleteEmployee(int id) {
-        try {
-            if (employees == null) {
-                throw new NullPointerException("List is Empty");
-            }
-        } catch (NullPointerException e) {
-            System.out.println(e.getMessage());
-        }
-        try {
-            if (!employees.containsKey(id)) {
-                throw new EmployeeNotFound("Employee not found");
-            }
-        } catch (EmployeeNotFound e) {
-            System.out.println("-------------------------");
-            System.out.println(e.getExceptionName());
-            System.out.println("-------------------------");
-        }
-
+        checkListIsEmpty();
         if (employees.containsKey(id)) {
             employees.remove(id);
-            System.out.println("-------------------------");
             System.out.println("Employee Removed..!");
-            System.out.println("-------------------------");
+        } else {
+            try {
+                throw new EmployeeNotFound("Employee not found");
+            } catch (EmployeeNotFound e) {
+                System.out.println(e.getExceptionName());
+            }
         }
 
-        // for (Integer emp : employees.keySet()) {
-        //     if (emp == id) {
-        //         employees.remove(emp);
-        //         System.out.println("Employee Removed..!");
-        //     }
-        // }
     }
 
     @Override
     public void listAllEmployees() {
-        try {
-            if (employees == null) {
-                throw new NullPointerException("List is Empty");
-            }
-        } catch (NullPointerException e) {
-            System.out.println(e.getMessage());
-        }
+        checkListIsEmpty();
         for (Integer emp : employees.keySet()) {
             displaySalarySlip(employees.get(emp));
         }
-    }
-
-    public int calculateExperience(Employee employee) {
-        try {
-            int hireYear = Integer.parseInt(employee.getHireDate().split("-")[2]);
-            return 2025 - hireYear;
-        } catch (NumberFormatException e) {
-            System.out.println("Error in hire date: ");
-            return 0;
-        }
-    }
-
-    @Override
-    public double calculateBonus(Employee employee) {
-        double bonus;
-        switch (employee.getDesignation().toLowerCase()) {
-            case "manager":
-                bonus = employee.getSalary() * 0.20;
-                break;
-            case "tech lead":
-                bonus = employee.getSalary() * 0.18;
-                break;
-            case "software developer":
-                bonus = employee.getSalary() * 0.15;
-                break;
-            case "intern":
-                bonus = employee.getSalary() * 0.10;
-                break;
-            default:
-                bonus = employee.getSalary() * 0.05;
-                break;
-        }
-        int experience = calculateExperience(employee);
-        bonus = bonus + employee.getSalary() * (0.005 * experience);
-        return bonus;
     }
 
     public void displaySalarySlip(Employee employee) {
@@ -178,28 +94,57 @@ class EmployeeDaoImplement implements EmployeeDao {
         System.out.println("----------------------------");
     }
 
-    @Override
-    public void displaySalarySlipById(int id) {
-        if (!employees.containsKey(id)) {
-            try {
-                throw new InvalidInput("Employee not found.");
-            } catch (InvalidInput e) {
-                System.out.println("----------------------------");
-                System.out.println(e.getExceptionName());
-                System.out.println("----------------------------");
-            }
+    public int calculateExperience(Employee employee) {
+        try {
+            int hireYear = Integer.parseInt(employee.getHireDate().split("/")[2]);
+            return 2025 - hireYear;
+        } catch (NumberFormatException e) {
+            System.out.println("Error in hire date: ");
+            return 0;
         }
-
-        // for (Integer employee : employees.keySet()) {
-        //     if (employee == id) {
-        //         displaySalarySlip(employees.get(id));
-        //     }
-        // }
     }
 
-    //List<Employee> list = new ArrayList<>();
+    public double calculateBonus(Employee employee) {
+        double bonus;
+        switch (employee.getDesignation().toLowerCase()) {
+            case "manager":
+                bonus = employee.getSalary() * 0.20;
+                break;
+            case "developer":
+                bonus = employee.getSalary() * 0.18;
+                break;
+            case "tester":
+                bonus = employee.getSalary() * 0.15;
+                break;
+            case "intern":
+                bonus = employee.getSalary() * 0.10;
+                break;
+            default:
+                bonus = employee.getSalary() * 0.05;
+                break;
+        }
+        int experience = calculateExperience(employee);
+        bonus = bonus + employee.getSalary() * (0.005 * experience);
+        return bonus;
+    }
+
+    @Override
+    public void displaySalarySlipById(int id) {
+        checkListIsEmpty();
+        if (employees.containsKey(id)) {
+            displaySalarySlip(employees.get(id));
+        } else {
+            try {
+                throw new EmployeeNotFound("Employee not found.");
+            } catch (EmployeeNotFound e) {
+                System.out.println(e.getExceptionName());
+            }
+        }
+    }
+
     @Override
     public void filterByDesignation(String designation) {
+        checkListIsEmpty();
         boolean flag = true;
         for (Integer employee : employees.keySet()) {
             if (employees.get(employee).getDesignation().equalsIgnoreCase(designation)) {

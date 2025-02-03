@@ -1,6 +1,0 @@
-<script>start("c:\\Users\\Ragul R\\Documents\\Training_project\\PayRoll\\PayRoll\\");</script>
-<script>onHasParentDirectory();</script>
-<script>addRow("Employee.java","Employee.java",0,1410,"1.4 kB",1738259204,"1/30/25, 11:16:44 PM");</script>
-<script>addRow("EmployeeDao.java","EmployeeDao.java",0,354,"354 B",1738298239,"1/31/25, 10:07:19 AM");</script>
-<script>addRow("EmployeeDaoImplement.java","EmployeeDaoImplement.java",0,7081,"6.9 kB",1738328258,"1/31/25, 6:27:38 PM");</script>
-<script>addRow("Main.java","Main.java",0,7804,"7.6 kB",1738324200,"1/31/25, 5:20:00 PM");</script>
