@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="/CSS/index.css" />
+  </head>
+  <body>
+    <br>
+    <hr>
+    <h1>Employee Information</h1>
+    <hr>
+    <div id="outer">
+      <form action="#">
+        <table>
+          <tr>
+            <td><label for="target">Name :</label></td>
+            <td><input type="text" autocomplete="off" id="target" required/></td>
+          </tr>
+          <tr>
+            <td><label for="">Email :</label></td>
+            <td><input type="email" required /></td>
+          </tr>
+          <tr>
+            <td><label for="">Password :</label></td>
+            <td><input type="password" required/></td>
+          </tr>
+          <tr>
+            <td><label for="">confirm Password :</label></td>
+            <td><input type="password" required /></td>
+          </tr>
+          <tr>
+            <td><label for="">Phone Number :</label></td>
+            <td><input type="tel" required /></td>
+          </tr>
+          <tr>
+            <td><label for="" input="gender" required>Gender :</label></td>
+            <td>
+              <input name="gender" type="radio" />Male
+              <input name="gender" type="radio" />Female
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Interest :</label></td>
+            <td><input type="checkbox" required/> JAVA</td>
+          </tr>
+
+          <tr>
+            <td></td>
+            <td><input type="checkbox" required /> HTML</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><input type="checkbox" required/> CSS</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><input type="checkbox" required/> JDBC</td>
+          </tr>
+          <tr>
+            <td><label for="">File Choosen</label></td>
+            <td><input type="file" required/></td>
+          </tr>
+          <tr>
+            <td><label for="">Company</label></td>
+            <td><input type="text" value="Tringapps" readonly /></td>
+          </tr>
+          <tr>
+            <td><label for="">Address</label></td>
+            <td><textarea name="" id="" required></textarea></td>
+          </tr>
+          <tr>
+            <td><label for="course">Course :</label></td>
+            <td>
+              <select id="course" name="course">
+                <option value="Java Fullstack">Java Fullstack</option>
+                <option value="Python FullStack">Python FullStack</option>
+                <option value="Java Testing">Java Testing</option>
+                <option value="Python Testing">Python Testing</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><input type="submit" /></td>
+          </tr>
+        </table>
+      </form>
+    </div>
+    <br />
+
+    <br />
+    <hr />
+    <br /><br />
+    <div id="lower">
+      <table>
+        <tr>
+          <td>Name :</td>
+          <td>Ragul</td>
+        </tr>
+        <tr>
+          <td>Email :</td>
+          <td>ragul.r@Tringapps.com</td>
+        </tr>
+        <tr>
+          <td>Image</td>
+          <td>
+            <img
+              src="https://w0.peakpx.com/wallpaper/214/158/HD-wallpaper-html5-logo-white-silk-texture-html5-emblem-programming-language-html-silk-background.jpg"
+              alt="java logo"
+              height="200px"
+              width="385px"
+            />
+          </td>
+        </tr>
+        <br />
+        <tr>
+          <td>YouTube</td>
+          <td>
+            <iframe
+              width="385"
+              height="200"
+              src="https://www.youtube.com/embed/HD13eq_Pmp8?si=0XJXnxseNIQlUkzG"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </td>
+        </tr>
+        <tr>
+          <td>Iframe</td>
+          <td>
+            <iframe
+              src="https://www.wikipedia.org/"
+              height="200"
+              width="385"
+              title="Iframe Example"
+            ></iframe>
+          </td>
+        </tr>
+        <tr>
+          <td>Link</td>
+          <td><a href="www.google.com" target="_blank">Google</a></td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

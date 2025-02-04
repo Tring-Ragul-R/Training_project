@@ -1,0 +1,37 @@
+form{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    justify-items: center;
+}
+h1{
+    text-align: center;
+}
+table{
+    border: 2px solid green;
+    border-radius: 5px;
+    padding: 25px;
+    text-align: center;
+    
+}
+hr{
+    border: 2px solid green;
+}
+.inner1{
+    border: 1px solid black;
+    height: 60px;
+    width: 60px;
+}
+
+tr{
+    text-align: left;
+    padding: 10px;
+}
+#lower{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    justify-items: center;
+}

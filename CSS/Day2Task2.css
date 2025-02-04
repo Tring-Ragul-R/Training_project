@@ -1,0 +1,108 @@
+
+body{
+    padding: 0px 25px;
+}
+
+.outer {
+    display: flex;
+    flex-direction: column;
+    background-color: mintcream;
+}
+
+.header {
+    display: grid;
+    grid-template-areas: "heading navigation";
+    grid-template-columns: 1fr 1fr;
+    padding: 20px 0px;
+}
+
+.heading {
+    grid-area: heading;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: large;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    grid-area: navigation;
+}
+
+.nav {
+    text-decoration: none;
+    color: gray;
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.nav:hover {
+    color: black;
+    font-weight: bold;
+}
+
+.section1 {
+    display: grid;
+    grid-template-areas: "longImg longImg outerGallery";
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+
+}
+
+.longImg {
+    grid-area: longImg;
+}
+
+.longImg>img {
+    height: 195px;
+    width: 100%;
+}
+
+.outerGallery {
+   
+    grid-area: outerGallery;
+    
+}
+.innergallery{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+}
+.gallery{
+    height: 65px;
+    width: 100%;
+}
+#lastest,#work{
+    font-weight: bold;
+}
+#work{
+    font-size: 18px;
+}
+.outerimage{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+.art{
+    width: 100%;
+    height: 175px;
+}
+.section3{
+    display: flex;
+    flex-direction: row;
+    font-family: sans-serif;
+}
+.content1{
+    width: 100%;
+    padding-right: 25px;
+  
+}
+.content2{
+    width: 100%;
+    padding-left: 25px;
+}
+
+.section3 p{
+    color: gray;
+    font-size: 14px;
+}

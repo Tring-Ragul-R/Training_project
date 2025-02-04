@@ -1,0 +1,102 @@
+
+body {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "sidebar content"
+    "hello hello"
+    "footer footer";
+  grid-template-columns: 1fr 3fr;
+  gap: 5px;
+  background-color: green;
+  padding: 5px;
+  margin: 0px;
+}
+
+body>div {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  height: 60px;
+}
+
+body>div.header {
+  grid-area: header;
+  text-align: center;
+  height: 50px;
+}
+
+body>div.sidebar {
+  grid-area: sidebar;
+  height: 415px;
+}
+
+body>div.content {
+  grid-area: content;
+  height: 415px;
+}
+
+body>div.footer {
+  grid-area: footer;
+  height: 50px;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+
+}
+
+.sidebar>p {
+  width: 100px;
+  height: 100%;
+  margin-top: 35px;
+  text-align: center;
+  margin-right: 50px;
+}
+
+.side_bar {
+  border: 1px solid white;
+  background-color: white;
+  color: orange;
+  text-decoration: none;
+  
+}
+
+.side_bar:hover {
+  border: 1px solid orange;
+  background-color: orange;
+  color: white;
+}
+.header{
+  background-color: #00C6A9;
+  display: flex;
+  flex-direction: row;
+}
+.Link{
+  color: white;
+  width: 100%;
+  line-height: 55px;
+  padding: px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.Link:hover{
+  color:black;
+}
+td{
+  padding: 20px;
+}
+.footer{
+  display: flex;
+  flex-direction: row;
+}
+.foot{
+  width: 100%;
+  line-height: 55px;
+  padding: px;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+}
