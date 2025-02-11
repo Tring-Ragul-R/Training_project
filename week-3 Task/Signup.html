@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/Signup.css" />
+    <!-- open Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Rajdhani -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="outerbody">
+      <div class="innerbody1">
+        <div class="header">tringapps</div>
+        <div class="formbody">
+          <div class="navigation">
+            <a href="/SignIn.html" class="signin">Sign In</a>
+            <a href="/Signup.html" class="signup">Sign Up</a>
+          </div>
+          <br />
+          <label class="label">Your Name</label>
+          <input
+            type="text"
+            id="name"
+            class="gap"
+            required
+            placeholder="Enter your name"
+          />
+          <br />
+          <label class="label">Email</label>
+          <input
+            type="email"
+            id="email"
+            class="gap"
+            placeholder="Enter email"
+          />
+          <br />
+          <label>languages</label>
+          <select id="language" class="gap">
+            <option style="color: grey" value="" disabled selected hidden>
+              Select an Option
+            </option>
+            <option value="English">English</option>
+            <option value="Tamil">Tamil</option>
+            <option value="Malayalam">Malayalam</option>
+            <option value="Tegulu">Tegulu</option>
+          </select>
+          <br />
+          <label>Phone Number</label>
+
+          <fieldset id="phonebody">
+            <select name="country" id="country">
+              <option value="+1" style="color: grey">+1</option>
+              <option value="+91">+91</option>
+              <option value="+71">+71</option>
+            </select>
+            <input
+              type="tel"
+              placeholder="Mobile Number"
+              id="phone"
+              class="gap"
+            />
+          </fieldset>
+          <br />
+          <label>Password</label>
+          <input
+            type="password"
+            id="password"
+            class="gap"
+            placeholder="Enter Password"
+          />
+          <br />
+          <fieldset>
+            <input type="checkbox" />
+            <label>Remember me</label>
+          </fieldset>
+          <fieldset>
+            <input type="checkbox" />
+            <label
+              >I agree to all the <span>Terms</span> and
+              <span>Privacy Policy</span></label
+            >
+          </fieldset>
+          <fieldset>
+            <input type="radio" />
+            <label>I’m over 18+</label>
+          </fieldset>
+          <br />
+          <p class="submit" id="submit-btn">Submit</p>
+          <p class="line-text">OR</p>
+          <a href="" class="signupgoogle"
+            >Sign Up with <img src="/Assests/ic_google.png" alt=""
+          /></a>
+          <br />
+          <p>Have an account?<a href="" id="redirect"> Sign In</a></p>
+        </div>
+      </div>
+      <div class="innerbody2">
+        <img src="/Assests/image.png" alt="" width="100%" height="1034px" />
+      </div>
+    </div>
+    <script src="/js/signup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,663 @@
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+}
+
+.container-1 {
+    /* display: flex; */
+    /* justify-content: space-between; */
+    background-image: url("/Assests/55072f20f2a86ca59714e9096473f689.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 7px;
+}
+
+.navigation {
+    width: 965px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    font-weight: 500;
+    font-family: Rajdhani;
+
+}
+
+.navigation select {
+    background-color: transparent;
+    border-color: transparent;
+    color: white;
+    font-size: 16px;
+    line-height: 21.79px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: black;
+    border: 1px solid #EBA832;
+    background-color: #EBA832;
+    padding: 5px 10px;
+    font-weight: 700;
+}
+
+.content-learnmore {
+    width: 200px;
+    height: 62px;
+    font-size: 20px;
+    line-height: 30px;
+    font-family: Rajdhani;
+    background-color: #EBA832;
+    color: black;
+    text-align: center;
+    font-weight: 700;
+    border-color: transparent;
+}
+
+.container-2 {
+    background-image: url("/Assests/Frame\ 1171275752.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+    width: 100%;
+    background-color: #292929;
+    padding: 40px 0px;
+
+}
+
+.page2-header {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.page2-header>p {
+    color: #EBA832;
+    height: 10px;
+    font-family: Open Sans;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 36%;
+
+
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.outer-card {
+    display: flex;
+    column-gap: 24px;
+    overflow-x: scroll;
+}
+
+.outer-card>div {
+    width: 410.67px;
+    max-height: 523px;
+    background-color: #323232;
+
+}
+
+.card-title {
+    opacity: 40%;
+    font-family: Open Sans;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 36%;
+    line-height: 19.07px;
+    color: white;
+
+}
+
+.card-title+p {
+    font-family: Rajdhani;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25.52px;
+    color: #FEFEFE;
+
+}
+
+.card>p {
+    padding: 0px 24px;
+}
+
+.card-content {
+    font-family: Open Sans;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: #FEFEFE;
+    opacity: 60%;
+}
+
+.card-img {
+    height: 190.5px;
+    width: 411px;
+    margin-top: 40px;
+}
+
+.container-3 {
+    padding: 120px 80px;
+}
+
+.container-3>p {
+    font-family: Open Sans;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19.07px;
+    color: #EBA832;
+    text-transform: uppercase;
+    word-spacing: 3px;
+}
+
+.container3-header {
+    display: flex;
+    height: 54px;
+    column-gap: 114px;
+}
+
+.container3-title {
+    font-family: Rajdhani;
+    text-transform: uppercase;
+    width: 478px;
+    font-weight: 700;
+    font-size: 42px;
+    margin-top: -10px;
+    line-height: 53.59px;
+    color: #292929;
+}
+
+.container3-title+p {
+    font-family: Open Sans;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #292929;
+    opacity: 60%;
+    margin-top: -14px;
+}
+
+.container3-nav>p {
+    width: 121px;
+    padding: 16px 20px;
+    text-decoration: none;
+    border-bottom: 2px solid #EBA832;
+    font-family: Rajdhani;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25.52px;
+    color: #292929;
+}
+
+.container3-nav>p+p {
+    border: 1px solid transparent;
+    opacity: 60%;
+}
+
+.container3-content {
+    display: flex;
+    column-gap: 270px;
+
+    border-bottom: 1px solid rgba(41, 41, 41, 0.1);
+}
+
+.container3-content-title {
+    padding-left: 44px;
+}
+
+.container3-content>p {
+    font-family: Rajdhani;
+    font-weight: 600;
+    font-size: 32px;
+    height: 120px;
+    width: 584px;
+    line-height: 40.83px;
+    color: rgba(41, 41, 41, 1);
+    padding-top: 44PX;
+    margin-bottom: 0px;
+
+
+}
+
+.container3-content>p+p {
+    margin-left: -60px;
+    height: 54px;
+    width: 784px;
+    font-family: Open Sans;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: rgba(41, 41, 41, 0.8);
+    overflow: scroll;
+
+}
+
+.container-4 {
+    background-image: url("/Assests/Frame\ 1171275752.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+    width: 100%;
+    background-color: #292929;
+}
+
+.container-4>p {
+    padding: 120px 0px 0px 80px;
+    font-family: Open Sans;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19.07px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: rgba(235, 168, 50, 1);
+    margin-bottom: -12px;
+}
+
+.con4-title {
+    font-family: Rajdhani;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 53.59px;
+    max-width: 478px;
+    color: rgba(254, 254, 254, 1);
+
+}
+
+.con4-title+p {
+    font-family: Open Sans;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: rgba(255, 255, 255, 0.6);
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+.con4-content {
+    max-height: 90px;
+    overflow: scroll;
+    font-family: Open Sans;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.con4-content+div>span {
+    font-family: Rajdhani;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    color: rgba(254, 254, 254, 1);
+}
+
+.con4-content+div>p {
+    display: inline;
+    font-family: Open Sans;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.con4-btn {
+    height: 48px;
+    width: 155px;
+    font-family: Rajdhani;
+    font-weight: 700;
+    line-height: 30px;
+    font-size: 18px;
+    color: rgba(41, 41, 41, 1);
+    background-color: #EBA832;
+    border-color: transparent;
+}
+
+.container-5 {
+    background-color: rgba(41, 41, 41, 1);
+    padding-bottom: 50px;
+
+}
+
+.container-5>p {
+    text-transform: uppercase;
+    font-family: Open Sans;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19.07px;
+    letter-spacing: 3px;
+    color: rgba(235, 168, 50, 1);
+    margin: 0px;
+    padding: 80px 0px 0px 80px;
+}
+
+.con5-title {
+
+    font-family: Rajdhani;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 53.59px;
+    text-transform: uppercase;
+    color: rgba(254, 254, 254, 1);
+    margin-top: 14px;
+    margin-bottom: 10px;
+
+}
+
+.con5-title+p {
+
+    font-family: Open Sans;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: rgba(255, 255, 255, 0.6);
+
+}
+
+.con5-nav {
+    padding: 0px 80px;
+    height: 58px;
+    width: 50%;
+    display: flex;
+}
+
+.con5-nav>p {
+    padding: 16px 20px;
+    font-family: Rajdhani;
+    font-weight: 500;
+    font-size: 20px;
+    padding-bottom: 30px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 17px;
+}
+
+.con5-img {
+    display: flex;
+    column-gap: 20px;
+    overflow-x: scroll;
+    margin-top: 48px;
+}
+
+.con5-img>img {
+    width: 410px;
+    height: 410px;
+}
+
+.container-6 {
+    padding: 1px 0px 110px 0px;
+    background-color: #292929;
+}
+
+.container-6>p {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Open Sans;
+    font-weight: 500;
+    line-height: 19.07px;
+    letter-spacing: 3px;
+    color: #EBA832;
+    padding: 0px;
+}
+
+.container-6>p+p {
+    font-family: Rajdhani;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 53.59px;
+    color: #FEFEFE;
+}
+
+.con6-outercard {
+    height: 370px;
+    display: flex;
+    column-gap: 2px;
+    overflow-x: scroll;
+    padding: 0px 80px;
+}
+
+.con6-outercard>div {
+    width: 425px;
+    height: 370px;
+    background-color: #323232;
+}
+
+.con6-img {
+    height: 94px;
+    padding: 62.24px 181.88px 0px 181.88px;
+}
+
+.con6.card2 {
+    background-image: url("/Assests/backgroundimgcon6.png");
+    background-size: 100%;
+    background-color: transparent;
+}
+
+.con6-img+p {
+    font-family: Rajdhani;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40.83px;
+    text-align: center;
+    color: #EBA832;
+    margin-bottom: 10px;
+}
+
+.con6-cardhead {
+    font-family: Open Sans;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+.con6-cardhead>span {
+    display: block;
+    font-weight: 300;
+}
+
+.container-7 {
+    padding: 80px;
+}
+
+.container-7>p {
+    font-family: Open Sans;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19.07px;
+    color: #EBA832;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.con7-title {
+    font-family: Rajdhani;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 53.59px;
+    color: #292929;
+    text-transform: uppercase;
+    width: 478px;
+    max-height: 54px;
+    margin-top: 14px;
+}
+
+.con7-title+p {
+    width: 688px;
+    font-family: Open Sans;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: rgba(41, 41, 41, 0.6);
+
+}
+
+#con7-card1 {
+    width: 964px;
+    height: 401px;
+    background-image: url(/Assests/con7\(1\).png);
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.6);
+
+}
+
+#con7-card2 {
+    height: 401px;
+    width: 116.7px;
+    background-image: url(/Assests/image\ \(5\).png);
+    background-size: cover;
+}
+
+.con7-cardcontent {
+    padding: 173px 112px 0px 24px;
+    font-family: Open Sans;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #FEFEFE;
+}
+
+.container-8>p {
+    font-family: Open Sans;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 3px;
+    line-height: 19.07px;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgba(235, 168, 50, 1);
+}
+
+.container-8>p+p {
+    font-family: Rajdhani;
+    font-size: 42px;
+    line-height: 53.59px;
+    color: #292929;
+    margin-top: 12px;
+}
+
+.con8-img>img {
+    height: 31px;
+    padding-left: 80px;
+    padding-top: 39.07px;
+}
+
+.container-9 {
+    background-image: url("/Assests/Group\ 4.png");
+    background-color: #EBA832;
+    background-size: cover;
+}
+
+.container-9>p {
+    font-family: Rajdhani;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 53.59px;
+    text-align: center;
+    color: #292929;
+    padding-top: 54px;
+    padding-bottom: 29px;
+    margin-bottom: 0px;
+}
+
+.con9-btn {
+    border-color: transparent;
+    padding: 16px 48px;
+    font-family: Rajdhani;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 54px
+}
+
+.container-10 {
+    height: 538px;
+    background-image: url("/Assests/Frame\ 1171275752\ \(1\).png");
+    background-color: rgba(28, 28, 28, 1);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+
+
+}
+
+.outer-footer {
+    padding: 100px 80px;
+    display: flex;
+    column-gap: 36px;
+}
+
+
+.mediaApp-img>img {
+    height: 24px;
+    width: 24px;
+}
+
+.mediaApp-img+p {
+    font-family: Open Sans;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 26px;
+    color: rgba(255, 255, 255, 0.4);
+
+}
+
+.standard-img {
+    width: 56.01px;
+    height: 56.01px;
+}
+
+.standard-img+p {
+    font-family: Open Sans;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24.51px;
+    color: rgba(254, 254, 254, 1);
+}
+
+.affiliates>img {
+    height: 27px;
+}
+
+
+
+.footer-2>p {
+    font-family: Open Sans;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+    color: rgba(255, 255, 255, 0.8);
+}
+.foot-title {
+    font-family: Open Sans;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24.51px;
+    color: rgba(254, 254, 254, 1);
+
+}
+
+.scroll{
+    width: 85%;
+    height: 4px;
+    margin: 82px 0px 40px 0px;
+    background-color: rgba(255, 255, 255, 0.08);
+}
+.scroll>div{
+    width: ;
+}

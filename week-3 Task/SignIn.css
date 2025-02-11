@@ -1,0 +1,125 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.main-container{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.container, .dummy{
+    flex: 50%;
+}
+
+.container{
+    background-color: #292929;
+    padding-top: 25px;
+    overflow-y: scroll;
+    padding-bottom: 30px;
+}
+
+.dummy img{
+    width: 100%;
+    height: 100%;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.signin-container{
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.signin{
+    width: 466px;
+    /* background-color: darkgoldenrod; */
+}
+
+.button{
+    color: #FEFEFE; 
+    font-size: 24px;
+    font-weight: 600; 
+    font-family: Rajdhani;
+    padding:10px 20px ;
+}
+
+.input-label{
+    font-family: Rajdhani;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1px;
+    color: #FFFFFF;
+}
+
+input::placeholder{
+    font-family: open-sans;
+    background-color: #292929;
+    color: #FFFFFF80;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: sans-serif;
+}
+
+input{
+    width: 100%;
+    height: 54px;
+    border: 1px solid #FFFFFF80;
+    background-color: #292929;
+    padding-left: 20px;
+    color: #FFFFFF80;
+    width: 100%;
+    max-width: 443px;
+}
+
+input[type="checkbox"]{
+    appearance: none; 
+    -webkit-appearance: none; 
+    width: 20px;
+    height: 20px;
+    background-color: #292929;
+    border: 1px solid white;
+}
+
+.remember{
+    font-weight: 400;
+    font-family: sans-serif;
+    font-size: 12px;
+    color: white;
+}
+
+.button-icon{
+    width: 100%;
+    height: 52px;
+    border: none;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: sans-serif;
+    color: #292929;
+    margin: auto;
+}
+
+
+.google-btn{
+   
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    gap: 10px;
+}
+
+a{
+    text-decoration: none;
+}
