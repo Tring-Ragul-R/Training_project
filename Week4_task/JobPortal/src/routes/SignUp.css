@@ -1,0 +1,28 @@
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    justify-content: center;
+    row-gap: 30px;
+    
+  }
+  .signup-form>input{
+    height: 40px;
+  }
+  .error {
+    color: red;
+    font-size: 14px;
+  }
+  .parent-signup-con{
+    display: flex;
+    flex-direction: column;
+    height: 70Vh;
+    align-items: center;
+    background-color: antiquewhite;
+  }
+  .signin-parent-con{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+  }

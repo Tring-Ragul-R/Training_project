@@ -1,0 +1,17 @@
+.addCart-parent-outer{
+    display: flex;
+    width: 100%;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.addCart-parent{
+    display: flex;
+    row-gap: 10px;
+    flex-direction: column;
+    width: 50%;
+}
+.addCart-parent>input{
+    height: 25px;
+}

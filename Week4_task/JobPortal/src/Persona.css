@@ -1,0 +1,78 @@
+.persona-parent-con{
+    background-color: #f3f4f5;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.persona-con{
+    width: 60%;
+   padding: 20px;
+    background-color: white;
+    overflow-y: scroll;
+    height: 60vh;
+    border-radius: 10px;
+}
+.persona-con>button{
+    color: #287da1;
+    border: none;
+    background-color: transparent;
+    float: right;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+}
+.persona-outer-card{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+.persona-outer-card>div{
+    width: 280px;
+}
+.persona-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+.persona-card>span{
+    border-radius: 100%;
+    padding:13px 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: gray;
+    border: 2px solid gray;
+    background-color: #f3f4f5;
+}
+.persona-card>p{
+    color: gray;
+}
+.persona-card>img{
+    top: 0%;
+    width: 280px;
+    height: 80px;
+}
+.edit-btn,.delete-btn{
+    height: 30px;
+    width: 70px;
+    background-color: blue;
+    color: white;
+    font-weight: 700;
+    border: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.delete-btn{
+    background-color: red;
+    cursor: pointer;
+}
