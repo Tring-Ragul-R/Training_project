@@ -4,6 +4,7 @@ import { useForm } from "react-hook-form";
 import "../routes/SignUp.css";
 import { UserContext } from "../App";
 import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 
 function SignUp() {
   const navigator = useNavigate();
@@ -19,6 +20,7 @@ function SignUp() {
   const submit = (data) => {
     setData(data);
     setArrData((oldArr)=>[...oldArr,data])
+    toast.success("User Registered Successfully")
     navigator("/signin");
     // console.log(data.name);
     // console.log(data.email);

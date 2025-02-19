@@ -1,17 +1,84 @@
-.addCart-parent-outer{
-    display: flex;
+.body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .heading {
+    text-align: center;
+    color: #343a40;
+    margin-bottom: 20px;
+  }
+  
+  .form-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #495057;
+  }
+  
+  .input-file,
+  .input-text {
     width: 100%;
-    height: 70vh;
-    justify-content: center;
-    align-items: center;
-}
-
-.addCart-parent{
-    display: flex;
-    row-gap: 10px;
-    flex-direction: column;
-    width: 50%;
-}
-.addCart-parent>input{
-    height: 25px;
-}
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #495057;
+  }
+  
+  .input-file {
+    padding: 5px;
+  }
+  
+  .input-text::placeholder {
+    color: #adb5bd;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button-cancel {
+    background-color: #6c757d;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
+  
+  .button-cancel:hover {
+    background-color: #5a6268;
+  }
+  
+  .image-preview {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+  }
+  

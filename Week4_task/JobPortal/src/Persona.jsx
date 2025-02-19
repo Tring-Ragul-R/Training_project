@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { UserContext } from "./App";
+import IMG from './assets/download.png'
 import "./Persona.css";
 
 function Persona() {
@@ -10,6 +11,7 @@ function Persona() {
   const addCard = () => {
     navigate("/addcard");
   };
+
 
   const edit = (index) => {
     const editCard = cardData[index];
@@ -46,9 +48,10 @@ function Persona() {
             </div>
           ))}
 
-          <div className="persona-card">
-            <span onClick={addCard}>+</span>
-            <p>Add a Persona</p>
+          <div className="persona-card" onClick={addCard}>
+            <img src={IMG} alt="defaultImage" />
+            <p>Enter Title</p>
+            <p>Enter Quote</p>
           </div>
         </div>
       </div>

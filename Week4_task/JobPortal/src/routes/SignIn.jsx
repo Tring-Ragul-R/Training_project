@@ -4,6 +4,7 @@ import { UserContext } from "../App";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import "../routes/SignUp.css";
+import { toast } from "react-toastify";
 
 function SignIn() {
   const { arrData,setLog } = useContext(UserContext);
@@ -26,10 +27,11 @@ function SignIn() {
 
     if (userFound) {
         setLog(true)
+        toast.success("User Login Successfull")
       navigator("/persona")
     } 
     else{
-        alert("user not found");
+        toast.error("user not found")
     }
   };
 
