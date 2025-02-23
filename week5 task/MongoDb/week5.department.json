@@ -1,0 +1,35 @@
+[{
+  "_id": {
+    "$oid": "67bb5ef192f5261713b45118"
+  },
+  "deptname": "HR",
+  "location": "chennai"
+},
+{
+  "_id": {
+    "$oid": "67bb61cf92f5261713b45122"
+  },
+  "deptname": "admin",
+  "location": "new york"
+},
+{
+  "_id": {
+    "$oid": "67bb61cf92f5261713b45123"
+  },
+  "deptname": "sales",
+  "location": "madurai"
+},
+{
+  "_id": {
+    "$oid": "67bb61cf92f5261713b45124"
+  },
+  "deptname": "tech",
+  "location": "bangalore"
+},
+{
+  "_id": {
+    "$oid": "67bb61cf92f5261713b45125"
+  },
+  "deptname": "IT",
+  "location": "columbia"
+}]

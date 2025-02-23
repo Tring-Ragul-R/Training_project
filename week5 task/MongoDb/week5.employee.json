@@ -1,0 +1,90 @@
+[{
+  "_id": {
+    "$oid": "67bb5ea392f5261713b45117"
+  },
+  "empname": "ragul",
+  "email": "ragul@gmail.com",
+  "designation": "software trainee",
+  "salary": 50000
+},
+{
+  "_id": {
+    "$oid": "67bb605092f5261713b45119"
+  },
+  "empName": "Sabesan",
+  "email": "sabesan@gmail.com",
+  "designation": "Manager",
+  "salary": 90000
+},
+{
+  "_id": {
+    "$oid": "67bb605092f5261713b4511a"
+  },
+  "empName": "Suriya",
+  "email": "suriya@gmail.com",
+  "designation": "Software Engineer",
+  "salary": 60000
+},
+{
+  "_id": {
+    "$oid": "67bb605092f5261713b4511b"
+  },
+  "empName": "Barath",
+  "email": "barath@gmail.com",
+  "designation": "Sales Manager",
+  "salary": 55000
+},
+{
+  "_id": {
+    "$oid": "67bb605092f5261713b4511c"
+  },
+  "empName": "Rajasekar",
+  "email": "rajasekar@gmail.com",
+  "designation": "Marketing Assistant",
+  "salary": 65000
+},
+{
+  "_id": {
+    "$oid": "67bb605092f5261713b4511d"
+  },
+  "empName": "Jaya Prakash",
+  "email": "jayaprakash@gmail.com",
+  "designation": "Software Trainee",
+  "salary": 50000
+},
+{
+  "_id": {
+    "$oid": "67bb605092f5261713b4511e"
+  },
+  "empName": "Mullai",
+  "email": "mullai@gmail.com",
+  "designation": "Junior Developer",
+  "salary": 55000
+},
+{
+  "_id": {
+    "$oid": "67bb605092f5261713b4511f"
+  },
+  "empName": "Nandha",
+  "email": "nandha@gmail.com",
+  "designation": "Marketing Specialist",
+  "salary": 85000
+},
+{
+  "_id": {
+    "$oid": "67bb605092f5261713b45120"
+  },
+  "empName": "Saran",
+  "email": "saran@gmail.com",
+  "designation": "Senior Developer",
+  "salary": 70000
+},
+{
+  "_id": {
+    "$oid": "67bb605092f5261713b45121"
+  },
+  "empName": "Srini",
+  "email": "srini@gmail.com",
+  "designation": "Marketing Manager",
+  "salary": 70000
+}]
