@@ -1,8 +1,7 @@
 import React from "react";
 import "./Home.css";
 
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import Header from "./Header";
+
 
 function Home() {
   return (

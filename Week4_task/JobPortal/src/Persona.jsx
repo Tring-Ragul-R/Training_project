@@ -26,7 +26,7 @@ function Persona() {
   return (
     <div className="persona-parent-con">
       <h1>Persona</h1>
-      <div className="persona-con">
+      <div className="persona-con d-flex flex-column" >
         <button onClick={addCard}>+ Add Persona</button>
         <div className="persona-outer-card">
           {cardData.map((data, index) => (
@@ -35,11 +35,11 @@ function Persona() {
               <p>{data.title}</p>
               <p>{data.quote}</p>
               <div>
-                <button className="edit-btn" onClick={() => edit(index)}>
+                <button className="edit-btn btn " onClick={() => edit(index)}>
                   Edit
                 </button>
                 <button
-                  className="delete-btn"
+                  className="delete-btn btn bg-danger"
                   onClick={() => deleteCard(index)}
                 >
                   Delete

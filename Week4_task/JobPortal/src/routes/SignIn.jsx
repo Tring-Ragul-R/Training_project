@@ -19,7 +19,6 @@ function SignIn() {
     navigator("/signup")
   }
   const funSubmit = (data) => {
-    //console.log( data);
 
     const userFound = arrData.some(
       (user) => user.email === data.email && user.password === data.password

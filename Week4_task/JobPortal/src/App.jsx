@@ -1,9 +1,8 @@
 import { Outlet } from "react-router-dom";
-import "./App.css";
 import Header from "./Header.jsx";
-import { createContext, useEffect, useState } from "react"; 
+import { createContext, useState } from "react"; 
 import {ToastContainer} from 'react-toastify';
-
+import 'bootstrap/dist/css/bootstrap.css';
 
 export const UserContext = createContext();
 function App() {

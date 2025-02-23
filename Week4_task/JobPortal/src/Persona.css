@@ -54,9 +54,7 @@
     border: 2px solid gray;
     background-color: #f3f4f5;
 }
-.persona-card>p{
-    color: gray;
-}
+
 .persona-card>img{
     top: 0%;
     width: 280px;
@@ -75,4 +73,10 @@
 .delete-btn{
     background-color: red;
     cursor: pointer;
+}
+.persona-card>p{
+    width: 95%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-weight: 500;
 }

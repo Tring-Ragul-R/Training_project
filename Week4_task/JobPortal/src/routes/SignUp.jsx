@@ -1,5 +1,5 @@
 
-import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
 import { useForm } from "react-hook-form";
 import "../routes/SignUp.css";
 import { UserContext } from "../App";
@@ -8,7 +8,7 @@ import { toast } from "react-toastify";
 
 function SignUp() {
   const navigator = useNavigate();
-  const { data, setData } = useContext(UserContext);
+  const { setData } = useContext(UserContext);
   const {setArrData} = useContext(UserContext)
   const {
     register,
@@ -22,15 +22,11 @@ function SignUp() {
     setArrData((oldArr)=>[...oldArr,data])
     toast.success("User Registered Successfully")
     navigator("/signin");
-    // console.log(data.name);
-    // console.log(data.email);
-    // console.log(data.password);
   };
 
-  const password = watch("password");
 
   return (
-    <>
+   
       <div style={{width:"100%"}}>
         <div className="parent-signup-con">
           <h1>Signup</h1>
@@ -81,7 +77,7 @@ function SignUp() {
           </form>
         </div>
       </div>
-    </>
+  
   );
 }
 
