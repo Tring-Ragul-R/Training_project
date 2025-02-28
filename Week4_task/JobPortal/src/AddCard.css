@@ -73,10 +73,20 @@
   .img-con{
     position: relative;
   }
-  
+  #img-label{
+    position: absolute;
+    font-size: 14px;
+    top: 12%;
+    left: 3%;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
   .deleteIcon{
     position: absolute;
-    top:20%;
+    top:5%;
     right: 3%;
     font-size: 30px;
     color: white;

@@ -6,12 +6,6 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 export const UserContext = createContext();
 function App() {
-  const [data, setData] = useState({
-    name: "",
-    email: "",
-    password: "",
-  });
-  const [arrData, setArrData] = useState([]);
   const [log,setLog] = useState(false)
   const [cardData,setCardData] = useState([])
  
@@ -19,11 +13,11 @@ function App() {
 
   return (
     <>
-      <UserContext.Provider value={{ data, setData,arrData,setArrData,setLog,cardData,setCardData }}>
+      <UserContext.Provider value={{log,setLog,cardData,setCardData }}>
         <ToastContainer/>
         
         
-       { !log && <Header />}
+       <Header />
         
         <Outlet />
         

@@ -1,21 +1,42 @@
+.persona-heading{
+    height: 55px;
+    line-height: 55px;
+    padding: 0px 50px;
+}
+.persona-heading>span{
+    color: #287da1;
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 13px;
+    border-bottom: 3px solid #287da1;
+}
+.persona-heading>p{
+    display: inline;
+    font-size: 20px;
+    font-weight: 600;
+    padding-right: 30px;
+}
 .persona-parent-con{
     background-color: #f3f4f5;
     padding: 0px;
     margin: 0px;
     width: 100%;
-    height: 100vh;
+    height: 75vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
+::-webkit-scrollbar{
+    display: none;
+}
 .persona-con{
-    width: 60%;
+    
+    width: 50%;
    padding: 20px;
     background-color: white;
     overflow-y: scroll;
-    height: 60vh;
+    height: 45vh;
     border-radius: 10px;
 }
 .persona-con>button{
@@ -44,6 +65,7 @@
     border-radius: 5px;
     box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
     position: relative;
+    padding-bottom: 13px;
 }
 .persona-card>span{
     border-radius: 100%;
@@ -77,6 +99,20 @@
 .persona-card>p{
     width: 95%;
     text-overflow: ellipsis;
+    white-space: nowrap;
     overflow: hidden;
     font-weight: 500;
+}
+.card-btn{
+    display: flex;
+    column-gap: 15px;
+}
+.add-btn{
+    float: right;
+    display: inline;
+    background-color: transparent;
+    border: none;
+    color: #287da1;
+    font-weight: 700;
+
 }

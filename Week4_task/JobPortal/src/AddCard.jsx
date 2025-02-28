@@ -4,6 +4,7 @@ import { useForm } from "react-hook-form";
 import { UserContext } from "./App";
 import { toast } from "react-toastify";
 import { MdDelete } from "react-icons/md";
+import { FaEdit } from "react-icons/fa";
 import IMG from './assets/download.png'
 import "./AddCard.css";
 
@@ -68,7 +69,7 @@ function AddCard() {
     navigate("/persona");
   };
   const deleteImg = ()=>{
-
+    setValue("image",null)
   }
   const imagePreview = watch("image") ;
   return (
@@ -79,7 +80,7 @@ function AddCard() {
         </h1>
         <form className="form-con" onSubmit={handleSubmit(onSubmit)}>
           <div className="form-group img-con">
-            <label className="label" htmlFor="img">Choose Image</label>
+            <label className="label" htmlFor="img" id="img-label"><FaEdit /> Choose Image</label>
             <input type="file" id="img" className="input-file" onChange={insertImg} />
             <img src={imagePreview || IMG} alt="Preview" className="img-preview" />
             <span className="deleteIcon" onClick={deleteImg}><MdDelete /></span>
@@ -105,12 +106,12 @@ function AddCard() {
             />
           </div>
           <div className="btn-con">
-          <button type="submit" className="btn">
+          <button type="submit" className="btn btn-success">
             {index != null ? "Update" : "Add"}
           </button>
           <button
             type="button"
-            className="btn button-cancel"
+            className="btn button-cancel btn-danger"
             onClick={funCancel}
           >
             Cancel
