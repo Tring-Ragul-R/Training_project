@@ -1,0 +1,18 @@
+public class Main {
+    public static void main(String[] args) {
+        Stack stack = new Stack();
+
+        //push elements in stack
+
+        stack.push(10);
+        stack.push(20);
+        stack.push(30);
+        stack.push(40);
+
+        stack.display();
+
+        stack.pop();
+        stack.display();
+        
+    }
+}
